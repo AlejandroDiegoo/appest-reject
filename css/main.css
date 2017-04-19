@@ -1,0 +1,388 @@
+
+body > div {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #eee;
+  background: #eee;
+  background: -moz-linear-gradient(top, #eee 0%, #ddd 100%);
+  background: -webkit-linear-gradient(top, #eee 0%, #ddd 100%);
+  background: linear-gradient(to bottom, #eee 0%, #ddd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#ddd', GradientType=0);
+}
+
+#preload {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  background-image: url('../assets/images/preload-background.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+#unplugged {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+#unplugged-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(130, 46, 46, 0.5);
+  background-image: url('../assets/images/unplugged-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  -webkit-animation: unpluggedIconAnimation .75s infinite;
+  -moz-animation: unpluggedIconAnimation .75s infinite;
+  -ms-animation: unpluggedIconAnimation .75s infinite;
+  -o-animation: unpluggedIconAnimation .75s infinite;
+  animation: unpluggedIconAnimation .75s infinite;
+}
+
+@keyframes unpluggedIconAnimation {
+  50% {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@-webkit-keyframes unpluggedIconAnimation {
+  50% {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@-moz-keyframes unpluggedIconAnimation {
+  50% {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@-ms-keyframes unpluggedIconAnimation {
+  50% {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@-o-keyframes unpluggedIconAnimation {
+  50% {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.margin-height {
+  height: 50px;
+}
+
+.margin-width {
+  width: 50px;
+}
+
+.hole {
+  display: table;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1), inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.screw {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: #98a3a9;
+  background-image: url('../assets/images/screw-background.png');
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset -1px -1px 0px 0px rgba(0, 0, 0, 0.1);
+  transform: rotate(5deg);
+}
+
+#logo {
+  background-image: url('../assets/images/logo.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* color leds */
+
+#leds .margin-width {
+  width: 20px;
+}
+
+#leds .led {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.75) 0px -1px 10px, #000 0px 0px 0px 0px;
+}
+
+#leds .led.led-red {
+  background-color: #803636;
+}
+
+.on #leds .led-red {
+  -webkit-animation: ledRedAnimation 1.5s 1s infinite;
+  -moz-animation: ledRedAnimation 1.5s 1s infinite;
+  -ms-animation: ledRedAnimation 1.5s 1s infinite;
+  -o-animation: ledRedAnimation 1.5s 1s infinite;
+  animation: ledRedAnimation 1.5s 1s infinite;
+}
+
+@keyframes ledRedAnimation {
+  50% {
+    background-color: #ef0a0a;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.75) 0px -1px 10px, #ef0a0a 0px 1px 5px 0px;
+  }
+}
+
+@-webkit-keyframes ledRedAnimation {
+  50% {
+    background-color: #ef0a0a;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.75) 0px -1px 10px, #ef0a0a 0px 1px 5px 0px;
+  }
+}
+
+@-moz-keyframes ledRedAnimation {
+  50% {
+    background-color: #ef0a0a;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.75) 0px -1px 10px, #ef0a0a 0px 1px 5px 0px;
+  }
+}
+
+@-ms-keyframes ledRedAnimation {
+  50% {
+    background-color: #ef0a0a;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.75) 0px -1px 10px, #ef0a0a 0px 1px 5px 0px;
+  }
+}
+
+@-o-keyframes ledRedAnimation {
+  50% {
+    background-color: #ef0a0a;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.75) 0px -1px 10px, #ef0a0a 0px 1px 5px 0px;
+  }
+}
+
+#leds .led.led-yellow {
+  background-color: #9e9e37;
+}
+
+.on #leds .led-yellow {
+  -webkit-animation: ledYellowAnimation 1s 1s infinite;
+  -moz-animation: ledYellowAnimation 1s 1s infinite;
+  -ms-animation: ledYellowAnimation 1s 1s infinite;
+  -o-animation: ledYellowAnimation 1s 1s infinite;
+  animation: ledYellowAnimation 1s 1s infinite;
+}
+
+@keyframes ledYellowAnimation {
+  50% {
+    background-color: #e0e010;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.5) 0px -1px 10px, #e0e010 0px 1px 5px 0px;
+  }
+}
+
+@-webkit-keyframes ledYellowAnimation {
+  50% {
+    background-color: #e0e010;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.5) 0px -1px 10px, #e0e010 0px 1px 5px 0px;
+  }
+}
+
+@-moz-keyframes ledYellowAnimation {
+  50% {
+    background-color: #e0e010;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.5) 0px -1px 10px, #e0e010 0px 1px 5px 0px;
+  }
+}
+
+@-ms-keyframes ledYellowAnimation {
+  50% {
+    background-color: #e0e010;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.5) 0px -1px 10px, #e0e010 0px 1px 5px 0px;
+  }
+}
+
+@-o-keyframes ledYellowAnimation {
+  50% {
+    background-color: #e0e010;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.5) 0px -1px 10px, #e0e010 0px 1px 5px 0px;
+  }
+}
+
+#leds .led.led-green {
+  background-color: #6d9618;
+}
+
+.on #leds .led-green {
+  background-color: #95d412;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px 1px, inset rgba(0, 0, 0, 0.5) 0px -1px 10px, #95d412 0px 1px 5px 0px;
+}
+
+/* main lights */
+
+#lights {
+  padding: 1px;
+  position: relative;
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: rgba(36, 224, 255, 0.10);
+}
+
+.on #lights {
+  -box-shadow: rgba(0, 0, 0, 0.25) 0 0px 0 0, inset rgba(0, 0, 0, 0.25) 0 -1px 9px, #c2cdce 0 0 0;
+}
+
+#lights > div:first-child {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 0px 0px #fff, inset 0px 0px 30px rgba(128, 254, 255, 0.25);
+    border-radius: 5px;
+}
+
+.on #lights > div:first-child {
+  box-shadow: 0px 0px 30px 5px #fff, inset 0px 0px 30px 5px rgba(128, 254, 255, 0.25);
+}
+
+#lights span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  margin: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0px 0px 10px 10px rgba(255, 255, 255, 0), 0px 0px 10px 3px rgba(255, 255, 255, 0);
+}
+
+#lights span.hide {
+  display: none;
+}
+
+.on #lights span {
+  box-shadow: inset 0px 0px 10px 10px rgba(255, 255, 255, 1), 0px 0px 10px 3px rgba(255, 255, 255, 1);
+}
+
+/* ventilation rack */
+
+#ventilation li {
+  position: relative;
+  margin-bottom: 5px!important;
+}
+
+#ventilation li:last-child {
+  margin-bottom: 0px!important;
+}
+
+#ventilation li:nth-child(3), #ventilation li:nth-last-child(3) {
+  width: 90%;
+}
+
+#ventilation li:nth-child(2), #ventilation li:nth-last-child(2) {
+  width: 80%;
+}
+
+#ventilation li:nth-child(1), #ventilation li:nth-last-child(1) {
+  width: 70%;
+}
+
+#ventilation li span {
+  display: block;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image: url('../assets/images/ventilation-background.png');
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+/* media queries */
+
+@media (max-height: 800px) {
+
+  #ventilation li span {
+    height: 20px;
+    border-radius: 4px;
+  }
+
+}
+
+@media (max-height: 700px) {
+
+  #ventilation li span {
+    height: 15px;
+    border-radius: 3px;
+  }
+
+}
+
+@media (max-height: 600px) {
+
+  .margin-height {
+    height: 40px;
+  }
+
+  .margin-width {
+    width: 40px;
+  }
+
+  #leds .led {
+    width: 25px;
+    height: 25px;
+  }
+
+  #ventilation li span {
+    height: 10px;
+    border-radius: 2px;
+  }
+
+}
+
+@media (max-height: 500px) {
+
+  .margin-height {
+    height: 30px;
+  }
+
+  .margin-width {
+    width: 30px;
+  }
+
+  .screw {
+    height: 15px;
+    width: 15px;
+  }
+
+  #leds .margin-width {
+    width: 15px;
+  }
+
+  #leds .led {
+    width: 20px;
+    height: 20px;
+  }
+
+  #ventilation li:nth-child(1), #ventilation li:nth-last-child(1) {
+    display: none;
+  }
+
+}
