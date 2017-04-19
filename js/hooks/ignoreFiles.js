@@ -13,7 +13,7 @@ module.exports = function(context) {
 	function getBlackListFiles(imagesPath) {
 		var imagesArray = fs.readdirSync(imagesPath, {'encoding': 'UTF-8'});
 		imagesArray.forEach(function(value) {
-		  value = imagesPath + value;
+			value = imagesPath + value;
 			var valueExtension = value.substr(value.length - 3).toLowerCase();
 			if (blackListExtensions.indexOf(valueExtension) != -1) {
 				fs.unlinkSync(value);
