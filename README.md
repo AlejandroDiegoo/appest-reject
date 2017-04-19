@@ -11,6 +11,8 @@ It's not a functional application. It's just a practical example of how to devel
 
 ### Ready to compile
 
+First you have to create your cordova project and paste all appest-reject content into ***www*** folder.
+
 If you are going to compile the application with cordova it's necessary to add the following plugin:
 
 ```
