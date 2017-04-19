@@ -7,7 +7,7 @@ Is a very simple experiment with which you can learn to develop an app in **HTML
 
 ### Important
 
-**Appest Reject** is not a functional application. It's just a practical example of how to develop an application using **css-responsive-tables** (https://github.com/AlejandroDiegoo/css-responsive-tables) and compile it with **Cordova** for later publishing to the **Google Play Store**.
+It's not a functional application. It's just a practical example of how to develop an application using **css-responsive-tables** (https://github.com/AlejandroDiegoo/css-responsive-tables) and compile it with **Cordova** for later publishing to the **Google Play Store**.
 
 ### Ready to compile
 
