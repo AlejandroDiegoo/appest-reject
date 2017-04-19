@@ -1,6 +1,6 @@
 # appest-reject
 
-It's a small (non-functional) application developed with **HTML** and **Javascript** that mimics an electronic insect repellent. 
+It's a very simple (non-functional) application developed with **HTML** and **Javascript** that mimics an electronic insect repellent. 
 Is a very simple experiment with which you can learn to develop an app in **HTML** to compile in **Cordova**.
 
 **Demo:** https://codeluxestudio.com/github/appest-reject
