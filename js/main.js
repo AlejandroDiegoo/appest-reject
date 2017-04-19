@@ -7,13 +7,13 @@ require([
 	}
 
 	function onBatteryStatus(status) {
-    if (status.isPlugged) {
-    	$('body > div').addClass('on');
-    	$('#unplugged').fadeOut();
-    } else {
-    	$('#unplugged').fadeIn();
-    	$('body > div').removeClass('on');
-    }
+		if (status.isPlugged) {
+			$('body > div').addClass('on');
+			$('#unplugged').fadeOut();
+		} else {
+			$('#unplugged').fadeIn();
+			$('body > div').removeClass('on');
+		}
 	}
 
 	function drawLights() {
@@ -50,16 +50,14 @@ require([
 		drawLights();
 
 		$(window).resize(function() {
-		  lightsSize();
+			lightsSize();
 		});
 
 		$('#preload').fadeOut();
 
 		if (document.URL.indexOf('http://') === -1 && document.URL.indexOf('https://') === -1) {
 
-			require([
-				'./../cordova'
-			], function() {
+			require(['./../cordova'], function() {
 
 				document.addEventListener('deviceready', onDeviceReady, false);
 
