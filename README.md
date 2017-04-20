@@ -25,6 +25,7 @@ Edit your **config.xml** so that it only allows portrait orientation.
 <platform name="android">
   <preference name="Orientation" value="portrait" />
 </platform>
+```
 
 In addition, you can add a hook to your **config.xml** to avoid compiling unnecessary files.
 
