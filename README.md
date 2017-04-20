@@ -11,13 +11,13 @@ It's not a functional application. It's just a practical example of how to devel
 
 ### Ready to compile
 
-First you have to create your cordova project and paste all appest-reject content into **www** folder.
-
-If you are going to compile the application with cordova it's necessary to add the following plugin:
+If you are going to compile the application with cordova, you have to create your cordova project and paste all appest-reject content into **www** folder. Then it's necessary to add the following plugin:
 
 ```
 cordova plugin add cordova-plugin-battery-status
 ```
+
+This plugin is used to detect if the usb cable is plugged.
 
 Edit your **config.xml** so that it only allows portrait orientation.
 
