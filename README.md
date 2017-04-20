@@ -19,10 +19,18 @@ If you are going to compile the application with cordova it's necessary to add t
 cordova plugin add cordova-plugin-battery-status
 ```
 
-In addition, you can add a hook to your config.xml to avoid compiling unnecessary files.
+Edit your **config.xml** so that it only allows portrait orientation.
 
 ```xml
 <platform name="android">
+  <preference name="Orientation" value="portrait" />
+</platform>
+
+In addition, you can add a hook to your **config.xml** to avoid compiling unnecessary files.
+
+```xml
+<platform name="android">
+  <preference name="Orientation" value="portrait" />
   <hook type="after_prepare" src="www/js/hooks/ignoreFiles.js" />
 </platform>
 ```
